@@ -14,7 +14,6 @@ This project is a work in progress, porting the original Go implementation to Ru
 Before you begin, ensure you have met the following requirements:
 
 * Rust (latest stable version) - [Install Rust](https://www.rust-lang.org/tools/install)[Golang](https://golang.org/doc/install) (version 1.19)
-* [Node.js](https://nodejs.org/) (version >= 19.4.0)
 * [Hardhat](https://hardhat.org/) (version >= 2.11.1)
 * [Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html) (^0.8.0)
 
