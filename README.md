@@ -1,20 +1,26 @@
-# Cross-Chain Oracle Using an Off-Chain Aggregation Mechanism Based on zk-SNARKs
+# Rust Implementation of Cross-Chain Oracle Using an Off-Chain Aggregation Mechanism Based on zk-SNARKs
 
-This project contains the source code for the paper "Cross-Blockchain Communication Using Oracles With an
-Off-Chain Aggregation Mechanism Based on zk-SNARKs." We provide a prototypical implementation of the smart contracts and the Oracle node.
+This is a Rust port of the [zkOracle](https://github.com/0xEigenLabs/zkOracle) project, originally implemented in Go. zkOracle-Rust aims to provide the same functionality as the original project while leveraging the benefits of the Rust programming language.
+
+Original Work: https://github.com/soberm/zkOracle
+Paper: https://arxiv.org/abs/2405.08395
+
+zkOracle-Rust is a zero-knowledge oracle system implemented in Rust. It allows for the creation and verification of zero-knowledge proofs for oracle data, enabling privacy-preserving data feeds for blockchain applications.
+
+This project is a work in progress, porting the original Go implementation to Rust.
 
 ## Prerequisites
 
-You need to have the following software installed:
+Before you begin, ensure you have met the following requirements:
 
-* [Golang](https://golang.org/doc/install) (version 1.19)
+* Rust (latest stable version) - [Install Rust](https://www.rust-lang.org/tools/install)[Golang](https://golang.org/doc/install) (version 1.19)
 * [Node.js](https://nodejs.org/) (version >= 19.4.0)
 * [Hardhat](https://hardhat.org/) (version >= 2.11.1)
 * [Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html) (^0.8.0)
 
 ## Installation
 
-### Constraint System Setup
+To install zkOracle-Rust, follow these steps:
 
 1. Change into the following directory: `cd node/cmd/compiler`
 2. Install all dependencies: `go mod download`
@@ -33,22 +39,13 @@ You need to have the following software installed:
 
 ### Node
 
-1. Change into the operator directory: `cd node/cmd/zkOracle`
-2. Install all dependencies: `go mod download`
-3. Build the node: `go build -o node`
-4. Run the node: `./node -c ./configs/config.json`
-
-### Evaluation
-
-For the evaluation of the prototype, we also provide a simulated version that allows measuring the gas consumption, proving time and memory usage in node/cmd/simulator
+```
+cargo run
+```
 
 ## Contributing
 
-This is a research prototype. We welcome anyone to contribute. File a bug report or submit feature requests through the issue tracker. If you want to contribute, feel free to submit a pull request.
-
-## Acknowledgement
-
-The financial support by the Austrian Federal Ministry for Digital and Economic Affairs, the National Foundation for Research, Technology and Development as well as the Christian Doppler Research Association is gratefully acknowledged.
+Contributions to zkOracle-Rust are welcome. Please feel free to submit a Pull
 
 ## Licence
 
